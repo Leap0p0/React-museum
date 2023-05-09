@@ -4,11 +4,14 @@ import { MainPage } from "./components/MainPage/MainPage";
 import { FetchHighlight } from "./fetchHighlight/fetchHighlight";
 import { Routes, Route } from "react-router-dom";
 import { SearchResult } from "./components/SearchResult/SearchResult";
+import { useLocation } from 'react-router-dom';
+import { Details } from "./components/Details/Details";
 
 
 
 function App() {
   const [highlight, setHighlight] = useState();
+  const location = useLocation();
 
   async function fetchHighlight () {
     const resul = await FetchHighlight.fetchHighlight();
@@ -18,12 +21,11 @@ function App() {
   useEffect( () => {
     fetchHighlight();
   }, []);
-
-  console.log("***", highlight);
   return (
     <div className="bg-black flex flex-col p-[10px] h-screen">
         <Routes>
-          <Route path="/searchresult" element= {<SearchResult testquick={highlight}/>} />
+          <Route path="/searchresult" element= {<SearchResult testquick={location.state}/>} />
+          <Route path="/details" element= {<Details details={location.state}/>} />
           <Route path="/" element={ <MainPage  highlight={highlight}/>}/>
         </Routes>
     </div>

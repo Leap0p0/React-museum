@@ -8,6 +8,7 @@ import { ResultList } from "../ResultList/ResultList";
 //Page Résultat
 
 export function SearchResult(props) {
+  console.log("resultat search : ", props.testquick);
     return (
     <>
       <div>
