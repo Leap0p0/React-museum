@@ -10,6 +10,7 @@ In the project directory, you can run:
 
 To download the necessary resources
 
+
 ### `npm start`
 
 Runs the app in the development mode.\
