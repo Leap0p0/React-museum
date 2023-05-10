@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React_museum/static/css/main.ba4a89dc.css",
+    "main.js": "/React_museum/static/js/main.051d87e7.js",
+    "index.html": "/React_museum/index.html",
+    "main.ba4a89dc.css.map": "/React_museum/static/css/main.ba4a89dc.css.map",
+    "main.051d87e7.js.map": "/React_museum/static/js/main.051d87e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba4a89dc.css",
+    "static/js/main.051d87e7.js"
+  ]
+}
