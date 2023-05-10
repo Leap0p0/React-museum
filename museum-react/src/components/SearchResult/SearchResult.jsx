@@ -11,7 +11,7 @@ export function SearchResult(props) {
   console.log("resultat search : ", props.testquick);
     return (
     <>
-      <div>
+     <div className=" bg-black h-screen">
         <div className=" pt-5 relative">
           <div className="flex flex-wrap items-center justify-center md:justify-between">
             <div className="">
@@ -23,7 +23,7 @@ export function SearchResult(props) {
                   <a class="text-white hover:text-[#d9d9d96e]" href="/">Main Page</a>
                 </li>
                 <li class="mr-6">
-                  <a class="text-white hover:text-[#d9d9d96e]" href="/searchresult">Advanced Search</a>
+                  <a class="text-white hover:text-[#d9d9d96e]" href="/advancedsearch">Advanced Search</a>
                 </li>
               </ul>
             </div>
@@ -32,7 +32,7 @@ export function SearchResult(props) {
             </div>
           </div>
         </div>
-        <div>
+        <div className="bg-black">
         {props.testquick && <ResultList searchresult={props.testquick} />}
         </div>
       </div>

@@ -31,7 +31,7 @@ export function MainPage(props) {
                   <a class="text-white hover:text-[#d9d9d96e]" href="/">Main Page</a>
                 </li>
                 <li class="mr-6">
-                  <a class="text-white hover:text-[#d9d9d96e]" href="/searchresult">Advanced Search</a>
+                  <a class="text-white hover:text-[#d9d9d96e]" href="/advancedsearch">Advanced Search</a>
                 </li>
               </ul>
             </div>
@@ -41,7 +41,7 @@ export function MainPage(props) {
           </div>
         </div>
         <div>
-          <h1 className="text-center md:text-left font-normal pl-0 md:pl-10 text-[35px] text-white">Famous Articles</h1>
+          <h1 className="bg-black text-center md:text-left font-normal pl-0 md:pl-10 text-[35px] text-white">Famous Articles</h1>
         </div>
         <div className=" bg-black flex">
             {props.highlight && <FamousArticlesList highlight={props.highlight} />}

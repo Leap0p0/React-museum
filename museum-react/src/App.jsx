@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import { SearchResult } from "./components/SearchResult/SearchResult";
 import { useLocation } from 'react-router-dom';
 import { Details } from "./components/Details/Details";
+import { AdvancedSearch } from "./components/AdvancedSearch/AdvancedSearch";
 
 
 
@@ -22,10 +23,11 @@ function App() {
     fetchHighlight();
   }, []);
   return (
-    <div className="bg-black flex flex-col p-[10px] h-screen">
+    <div className="bg-black flex flex-col p-[10px]">
         <Routes>
           <Route path="/searchresult" element= {<SearchResult testquick={location.state}/>} />
           <Route path="/details" element= {<Details details={location.state}/>} />
+          <Route path="/advancedsearch" element= {<AdvancedSearch/>} />
           <Route path="/" element={ <MainPage  highlight={highlight}/>}/>
         </Routes>
     </div>
