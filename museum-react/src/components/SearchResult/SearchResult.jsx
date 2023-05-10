@@ -13,11 +13,11 @@ export function SearchResult(props) {
     <>
       <div>
         <div className=" pt-5 relative">
-          <div className="flex items-center justify-between">
-            <div className="shrink-0">
-              <img className="w-[150px] pl-10 " src="https://i.imgur.com/7gRNUNa.png" alt="logo" />
+          <div className="flex flex-wrap items-center justify-center md:justify-between">
+            <div className="">
+              <img className="w-[150px] pl-0 md:pl-10 " src="https://i.imgur.com/7gRNUNa.png" alt="logo" />
             </div>
-            <div className="items-center">
+            <div className="pb-[25px] md:pb-0 items-center">
               <ul class="flex">
                 <li class="mr-6">
                   <a class="text-white hover:text-[#d9d9d96e]" href="/">Main Page</a>
